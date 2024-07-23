@@ -1,0 +1,27 @@
+@host=http://localhost:9303/user/
+@tokenAuth=Bearer xxx
+
+###
+GET {{host}}public
+Content-Type: application/json
+
+###
+GET {{host}}user
+Content-Type: application/json
+Authorization: {{tokenAuth}}
+
+###
+GET {{host}}admin
+Content-Type: application/json
+Authorization: {{tokenAuth}}
+
+###
+GET {{host}}all
+Content-Type: application/json
+Authorization: {{tokenAuth}}
+
+
+
+
+
+
